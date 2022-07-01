@@ -1,0 +1,15 @@
+{
+  "arrowParens": "avoid",
+  "importOrder": [
+    "^(next(.*)|react|react-dom)$",
+    "<THIRD_PARTY_MODULES>",
+    "^components(.*)$",
+    "^pages(.*)$",
+    "^[./]"
+  ],
+  "importOrderCaseInsensitive": true,
+  "importOrderParserPlugins": ["jsx", "typescript"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "semi": false
+}
