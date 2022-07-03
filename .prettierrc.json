@@ -3,8 +3,7 @@
   "importOrder": [
     "^(next(.*)|react|react-dom)$",
     "<THIRD_PARTY_MODULES>",
-    "^components(.*)$",
-    "^pages(.*)$",
+    "^@/(.*)$",
     "^[./]"
   ],
   "importOrderCaseInsensitive": true,

@@ -1,9 +1,10 @@
-import Home from "@/pages/index"
-import { render, screen } from "@testing-library/react"
+import { render, screen } from "@/utils/test-utils"
 
-describe("Home", () => {
+import { PageHome } from "./PageHome"
+
+describe("PageHome", () => {
   it("renders a heading", () => {
-    render(<Home />)
+    render(<PageHome />)
 
     const heading = screen.getByRole("heading", {
       name: /welcome to next\.js!/i,
