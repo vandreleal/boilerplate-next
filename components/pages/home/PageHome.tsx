@@ -11,12 +11,14 @@ export const PageHome: FC = () => {
   const renderTable = (dependencies: { [s: string]: string }) => {
     return (
       <S.Table>
-        {Object.entries(dependencies).map(([dep, version]) => (
-          <tr key={dep}>
-            <td>{dep}</td>
-            <td>{version}</td>
-          </tr>
-        ))}
+        <tbody>
+          {Object.entries(dependencies).map(([dep, version]) => (
+            <tr key={dep}>
+              <td>{dep}</td>
+              <td>{version}</td>
+            </tr>
+          ))}
+        </tbody>
       </S.Table>
     )
   }

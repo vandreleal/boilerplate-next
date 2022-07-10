@@ -8,7 +8,10 @@ import { globalStyle } from "@/styles/global"
 import { dark, light } from "@/styles/theme"
 
 export const Container = styled.div`
-  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
   background-color: ${({ theme }) => theme.body.background};
   color: ${({ theme }) => theme.body.color};
 
@@ -18,7 +21,7 @@ export const Container = styled.div`
 `
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const [isDarkTheme, setIsDarkTheme] = useState(false)
+  const [isDarkTheme, setIsDarkTheme] = useState(true)
 
   return (
     <>
