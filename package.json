@@ -29,7 +29,7 @@
     "@emotion/jest": "11.9.4",
     "@emotion/react": "11.9.3",
     "@emotion/styled": "11.9.3",
-    "@next/bundle-analyzer": "12.2.2",
+    "@next/bundle-analyzer": "12.2.3",
     "next": "12.2.2",
     "next-compose-plugins": "2.2.1",
     "next-pwa": "5.5.5",
