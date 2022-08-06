@@ -1,12 +1,11 @@
-/** @type {import('next').NextConfig} */
-const withPlugins = require("next-compose-plugins")
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 })
 const withPWA = require("next-pwa")
 const runtimeCaching = require("next-pwa/cache")
 
-const nextConfig = withPlugins([withBundleAnalyzer, withPWA], {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   compiler: {
     emotion: true,
   },
@@ -17,6 +16,11 @@ const nextConfig = withPlugins([withBundleAnalyzer, withPWA], {
   },
   reactStrictMode: true,
   swcMinify: true,
-})
+}
 
-module.exports = nextConfig
+module.exports = () => {
+  const plugins = [withBundleAnalyzer, withPWA]
+  return plugins.reduce((acc, plugin) => plugin(acc), {
+    ...nextConfig,
+  })
+}
