@@ -1,13 +1,19 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
   "extends": [
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
-    "plugin:storybook/recommended",
-    "prettier",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
     "vandre"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "testing-library",
+    "jest-dom",
+    "jsx-a11y",
+    "prettier"
   ],
   "overrides": [
     // Only uses Testing Library lint rules in test files
@@ -17,6 +23,11 @@
         "**/?(*.)+(spec|test).[jt]s?(x)"
       ],
       "extends": ["plugin:testing-library/react"]
+    },
+    // Only uses Storybook lint rules in stories
+    {
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+      "extends": ["plugin:storybook/recommended"]
     }
   ]
 }
