@@ -20,6 +20,10 @@ export const Container = styled.div`
   }
 `
 
+if (process.env.NEXT_PUBLIC_API_MOCKING === "enabled") {
+  require("@/mocks")
+}
+
 const App = ({ Component, pageProps }: AppProps) => {
   const [isDarkTheme, setIsDarkTheme] = useState(true)
 
