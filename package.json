@@ -28,7 +28,7 @@
   "dependencies": {
     "@emotion/jest": "11.10.5",
     "@emotion/react": "11.10.6",
-    "@emotion/styled": "11.10.5",
+    "@emotion/styled": "11.10.6",
     "@next/bundle-analyzer": "13.1.6",
     "next": "13.1.6",
     "next-pwa": "5.6.0",
@@ -37,7 +37,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.20.12",
+    "@babel/core": "7.21.0",
     "@storybook/addon-a11y": "6.5.16",
     "@storybook/addon-actions": "6.5.16",
     "@storybook/addon-essentials": "6.5.16",
@@ -48,13 +48,13 @@
     "@storybook/react": "6.5.16",
     "@storybook/testing-library": "0.0.13",
     "@testing-library/jest-dom": "5.16.5",
-    "@testing-library/react": "13.4.0",
+    "@testing-library/react": "14.0.0",
     "@trivago/prettier-plugin-sort-imports": "4.0.0",
-    "@types/node": "18.14.0",
+    "@types/node": "18.14.1",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
-    "@typescript-eslint/eslint-plugin": "5.51.0",
-    "@typescript-eslint/parser": "5.51.0",
+    "@typescript-eslint/eslint-plugin": "5.53.0",
+    "@typescript-eslint/parser": "5.53.0",
     "babel-loader": "9.1.2",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
@@ -62,15 +62,18 @@
     "eslint-config-vandre": "1.1.0",
     "eslint-plugin-jest-dom": "4.0.3",
     "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-storybook": "0.6.10",
-    "eslint-plugin-testing-library": "5.10.1",
+    "eslint-plugin-storybook": "0.6.11",
+    "eslint-plugin-testing-library": "5.10.2",
     "husky": "8.0.3",
     "jest": "29.4.3",
-    "jest-environment-jsdom": "29.4.2",
+    "jest-environment-jsdom": "29.4.3",
     "lint-staged": "13.1.2",
     "msw": "1.0.1",
     "prettier": "2.8.4",
     "storybook-addon-next-router": "4.0.2",
     "typescript": "4.9.5"
+  },
+  "resolutions": {
+    "@storybook/react-docgen-typescript-plugin": "npm:react-docgen-typescript-plugin@1.0.5"
   }
 }
