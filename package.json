@@ -71,7 +71,7 @@
     "msw": "1.2.1",
     "prettier": "2.8.7",
     "storybook-addon-next-router": "4.0.2",
-    "typescript": "5.0.2"
+    "typescript": "5.0.3"
   },
   "resolutions": {
     "@storybook/react-docgen-typescript-plugin": "npm:react-docgen-typescript-plugin@1.0.5"
