@@ -22,8 +22,8 @@
     "lint:fix": "next lint --fix",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "format": "yarn lint:fix && yarn prettier",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emotion/jest": "11.10.5",
@@ -38,15 +38,14 @@
   },
   "devDependencies": {
     "@babel/core": "7.21.4",
-    "@storybook/addon-a11y": "6.5.16",
-    "@storybook/addon-actions": "6.5.16",
-    "@storybook/addon-essentials": "6.5.16",
-    "@storybook/addon-interactions": "6.5.16",
-    "@storybook/addon-links": "6.5.16",
-    "@storybook/builder-webpack5": "6.5.16",
-    "@storybook/manager-webpack5": "6.5.16",
-    "@storybook/react": "6.5.16",
-    "@storybook/testing-library": "0.0.13",
+    "@storybook/addon-a11y": "7.0.6",
+    "@storybook/addon-essentials": "7.0.6",
+    "@storybook/addon-interactions": "7.0.6",
+    "@storybook/addon-links": "7.0.6",
+    "@storybook/blocks": "7.0.6",
+    "@storybook/nextjs": "7.0.6",
+    "@storybook/react": "7.0.6",
+    "@storybook/testing-library": "0.0.14-next.2",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "14.0.0",
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
@@ -70,10 +69,7 @@
     "lint-staged": "13.2.1",
     "msw": "1.2.1",
     "prettier": "2.8.8",
-    "storybook-addon-next-router": "4.0.2",
+    "storybook": "7.0.6",
     "typescript": "5.0.4"
-  },
-  "resolutions": {
-    "@storybook/react-docgen-typescript-plugin": "npm:react-docgen-typescript-plugin@1.0.5"
   }
 }
