@@ -21,7 +21,7 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "format": "yarn lint:fix && yarn prettier",
+    "format": "pnpm lint:fix && pnpm prettier",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
