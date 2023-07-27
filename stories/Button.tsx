@@ -39,7 +39,7 @@ export const Button = ({
   return (
     <button
       className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
+        " ",
       )}
       type="button"
       {...props}
