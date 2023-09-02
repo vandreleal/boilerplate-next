@@ -71,7 +71,7 @@
     "lint-staged": "14.0.1",
     "msw": "1.2.4",
     "prettier": "3.0.2",
-    "storybook": "7.3.2",
+    "storybook": "7.4.0",
     "typescript": "5.2.2"
   }
 }
